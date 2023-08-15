@@ -1,0 +1,147 @@
+.planos {
+  background-color: var(--cor-w);
+}
+
+.planos-bg {
+  padding: 60px 20px;
+}
+
+.planos-texto {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.planos-texto h1 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.planos-texto p {
+  text-align: center;
+  max-width: 60ch;
+  margin-bottom: 40px;
+}
+
+.planos-texto h1::before {
+  content: "";
+  width: 70px;
+  height: 7px;
+  display: inline-block;
+  background: linear-gradient(var(--cor-p1), var(--cor-p2));
+  position: absolute;
+  top: 60px;
+  left: 37px;
+}
+
+.planos-itens-bg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.planos-itens {
+  background-color: var(--cor-w);
+}
+
+.planos-item {
+  display: grid;
+  max-width: 400px;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.planos-item:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.2);
+}
+
+.planos-nome {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.planos-lista {
+  padding: 40px 20px;
+}
+
+.planos-lista li {
+  display: flex;
+  gap: 15px;
+}
+
+.planos-lista li span {
+  max-width: 20ch;
+}
+
+.planos-lista li + li {
+  margin-top: 20px;
+}
+
+.planos-item a {
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 950px) {
+  .planos-itens-bg {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .planos-lista li span {
+    max-width: 30ch;
+  }
+}
+
+@media (max-width: 550px) {
+  .planos-bg {
+    padding: 40px 20px;
+  }
+
+  .planos-texto h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .planos-texto p {
+    font-size: 1rem;
+  }
+
+  .planos-texto h1::before {
+    top: 50px;
+    left: 29px;
+  }
+
+  .planos-itens-bg {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .planos-lista li span {
+    max-width: 30ch;
+  }  
+}
+
+@media (max-width: 450px) {
+  .planos-itens-bg {
+    gap: 20px;
+  }
+
+  .planos-texto h1 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .planos-texto p {
+    font-size: 0.875rem;
+  }
+
+  .planos-texto h1::before {
+    top: 40px;
+    left: 20px;
+  }
+}

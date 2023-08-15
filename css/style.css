@@ -1,0 +1,36 @@
+/* Tipografia */
+
+@import "tipografia.css";
+
+/* Cores */
+
+@import "cores.css";
+
+/* Global */
+
+@import "global.css";
+
+/* Header */
+
+@import "header.css";
+
+/* Introdução */
+
+@import "introducao.css";
+
+/* Planos */
+
+@import "planos.css";
+
+/* Vantagens */
+
+@import "vantagens.css";
+
+
+/* Duvidas */
+
+@import "duvidas.css";
+
+/* Contato */
+
+@import "contato.css";

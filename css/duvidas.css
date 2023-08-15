@@ -1,0 +1,104 @@
+.duvidas {
+  background-color: var(--cor-w);
+}
+
+.duvidas-bg {
+  padding: 60px 20px;
+}
+
+.duvidas-texto {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.duvidas-texto h1 {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.duvidas-texto h1::before {
+  content: "";
+  width: 70px;
+  height: 7px;
+  display: inline-block;
+  background: linear-gradient(var(--cor-p1), var(--cor-p2));
+  position: absolute;
+  top: 60px;
+  left: 164px;
+}
+
+.duvidas-itens button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  width: 100%;
+  background: var(--cor-w2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.duvidas-itens button::after {
+  content: "";
+  width: 15px;
+  height: 10px;
+  background: url("../img/seta.svg") no-repeat;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.duvidas-itens button:hover::after,
+.duvidas-itens button[aria-expanded="true"]::after {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.duvidas-itens button:hover,
+.duvidas-itens button[aria-expanded="true"]  {
+  transition: 0.3s;
+  background: var(--cor-p1);
+}
+
+.duvidas-itens dd {
+  display: none;
+  padding: 0px 20px;
+  margin-bottom: 40px;
+}
+
+.duvidas-itens dd.ativa {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .duvidas-item button {
+    font-size: 1rem;
+    text-transform: initial;
+  }
+}
+
+@media (max-width: 550px) {
+  .duvidas-texto h1 {
+    font-size: 2rem;
+  }
+
+  .duvidas-texto h1::before {
+    top: 50px;
+    left: 141px;
+  }
+}
+
+@media (max-width: 450px) {
+  .duvidas-texto h1 {
+    font-size: 1.75rem;
+  }
+
+  .duvidas-texto h1::before {
+    top: 50px;
+    left: 119px;
+  }
+}

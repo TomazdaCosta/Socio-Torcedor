@@ -1,0 +1,58 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.botao {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: max-content;
+}
+
+.gold {
+  background: linear-gradient(var(--cor-p1), var(--cor-p2));
+}
+
+a.gold:hover {
+  background: linear-gradient(var(--cor-p1h), var(--cor-p2h));
+}
+
+.silver {
+  background: linear-gradient(var(--cor-s1), var(--cor-s2));
+}
+
+a.silver:hover {
+  background: linear-gradient(var(--cor-s1h), var(--cor-s2h));
+}
+
+.bronze {
+  background: linear-gradient(var(--cor-z1), var(--cor-z2));
+}
+
+a.bronze:hover {
+  background: linear-gradient(var(--cor-z1h), var(--cor-z2h));
+}
+
+.purple {
+  background: linear-gradient(var(--cor-r1), var(--cor-r2));
+}
+
+a.purple:hover {
+  background: linear-gradient(var(--cor-r1h), var(--cor-r2h));
+}
