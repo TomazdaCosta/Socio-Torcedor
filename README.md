@@ -17,3 +17,8 @@ Esse projeto trata-se de uma landing page que emula um site fictício do program
 ## Layout Mobile
 
 ![Imagem](https://github.com/TomazdaCosta/Socio-Torcedor/assets/131727236/3129174a-95a8-415f-8930-8accaaab6dc3) ![Imagem](https://github.com/TomazdaCosta/Socio-Torcedor/assets/131727236/1ed6c299-367a-41aa-a41e-02b8d24a77d3) ![Imagem](https://github.com/TomazdaCosta/Socio-Torcedor/assets/131727236/b0f0471e-50e7-438f-ad1a-2bb633cac1e5)
+
+## Autor
+
+Tomaz Costa
+- LinkedIn: https://www.linkedin.com/in/tomaz-costa-a013a530b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
